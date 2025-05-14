@@ -17,7 +17,7 @@ body {
 }
 
 .receipt {
-  font-size: 18px;
+  font-size: 28px;
   line-height: 1.6;
   background-color: beige;
   border: 1px dashed black;
@@ -27,7 +27,7 @@ body {
 }
 
 .date {
-  font-size: 14px;
+  font-size: 20px;
   text-align: right;
   margin-bottom: 10px;
 }
@@ -37,6 +37,7 @@ a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  font-family: 'ReceiptFont'
 }
 
 .toggle-btn {
@@ -46,7 +47,7 @@ a {
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   padding: 0;
   margin-top: 10px;
 }
