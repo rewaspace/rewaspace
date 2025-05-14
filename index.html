@@ -4,17 +4,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rewa’s Receipts</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Rewa’s Mind</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .toggle-btn {
+      margin-top: 10px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline;
+      border: none;
+      background: none;
+      font-size: 1em;
+      padding: 0;
+    }
+
+    #receipt-content {
+      display: none;
+    }
+
+    #index-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="receipt">
-    <h1>REWA’S MIND</h1>
-    <p class="date">14 MAY 2025</p>
-    <hr>
-    <p>“Fairly intuitive over-thinker”</p>
-    <p>— Receipt #001</p>
-    <a href="receipt1.html">Read</a>
+    <!-- INDEX VIEW -->
+    <div id="index-content">
+      <h1>REWA’S MIND</h1>
+      <p class="date">14 MAY 2025</p>
+      <hr />
+      <p>“Fairly intuitive over-thinker”</p>
+      <p>— Receipt #001</p>
+      <button class="toggle-btn" onclick="showReceipt()">Read</button>
+    </div>
+
+    <!-- RECEIPT VIEW -->
+    <div id="receipt-content">
+      <h1>RECEIPT #001</h1>
+      <p class="date">14 MAY 2025</p>
+      <hr />
+      <p>Today, I remembered the way the air smelled during monsoon evenings.  
+      The mind is a loop, not a line.</p>
+      <button class="toggle-btn" onclick="showIndex()">← Back</button>
+    </div>
   </div>
+
+  <script>
+    function showReceipt() {
+      document.getElementById("index-content").style.display = "none";
+      document.getElementById("receipt-content").style.display = "block";
+    }
+
+    function showIndex() {
+      document.getElementById("receipt-content").style.display = "none";
+      document.getElementById("index-content").style.display = "block";
+    }
+  </script>
 </body>
 </html>
