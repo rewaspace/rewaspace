@@ -1,0 +1,30 @@
+
+body {
+  background-color: #fdfdfd;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.receipt {
+  background-color: white;
+  border: 1px dashed black;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.date {
+  font-size: 0.8em;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
